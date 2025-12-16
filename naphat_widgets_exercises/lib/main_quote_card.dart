@@ -4,10 +4,10 @@
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const StudentProfile());
+void main() => runApp(const QuoteCard());
 
-class StudentProfile extends StatelessWidget {
-  const StudentProfile({super.key});
+class QuoteCard extends StatelessWidget {
+  const QuoteCard({super.key});
 
   // This widget is the root of your application.
   @override
