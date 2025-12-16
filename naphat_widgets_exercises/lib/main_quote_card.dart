@@ -4,10 +4,10 @@
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const QuoteCard());
+void main() => runApp(const QuoteContainerCard());
 
-class QuoteCard extends StatelessWidget {
-  const QuoteCard({super.key});
+class QuoteContainerCard extends StatelessWidget {
+  const QuoteContainerCard({super.key});
 
   // This widget is the root of your application.
   @override
@@ -17,7 +17,6 @@ class QuoteCard extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Student Profile App',
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: .fromSeed(seedColor: Colors.deepOrange),
