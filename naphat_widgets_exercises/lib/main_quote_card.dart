@@ -1,6 +1,16 @@
-// Main Quote Card
-// Author Naphat Chanthakorn
-// Date 2025-12-10
+/// Quote Card
+///
+/// This widget displays a quote image and the author's name
+///
+/// ============================================
+/// AI DOCUMENTATION
+/// Tool: ChatGPT (GPT-5.2)
+/// Prompt:
+/// ============================================
+///
+/// Author Naphat Chanthakorn
+/// Date 2025-12-10
+library;
 
 import 'package:flutter/material.dart';
 
