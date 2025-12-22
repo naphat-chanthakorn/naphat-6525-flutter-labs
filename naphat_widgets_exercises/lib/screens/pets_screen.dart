@@ -1,6 +1,8 @@
 /// Pets Screen
 ///
-/// This widget is
+/// This widget is the pet gallery screen that arranges four PetCard widgets
+/// into a centered 2x2 grid layout. Rows and Columns with Expanded are
+/// used to evenly space and align the pet cards on the screen.
 ///
 /// ============================================
 /// AI DOCUMENTATION
