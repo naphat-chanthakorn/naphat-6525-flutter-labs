@@ -4,10 +4,25 @@
 ///
 /// ============================================
 /// AI DOCUMENTATION
-/// No AI tools were used for this file.
-/// All code written independently.
-///
+/// Tool: ChatGPT (GPT-5.2)
+/// Prompt: Create a Flutter screen that displays a pet gallery using
+/// PetCard widgets arranged in a 2x2 grid with Column and Row layout.
 /// ============================================
+///
+/// EXPLANATION (in my own words):
+/// This is the PetsScreen widget, which serves as the main gallery screen.
+/// It uses a Scaffold to provide basic app structure, including an AppBar
+/// and a body centers a Column that contains two Rows, each displaying
+/// two PetCard widgets. Expanded widgets are used to ensure that each
+/// PetCard takes equal horizontal space within a row.
+///
+/// VERIFICATION:
+/// The screen was tested by running the app on an emulator, Pixel 8.
+/// Verified that all images load correctly from their URLs, and no overflow
+/// or alignment issues occur.
+///
+/// MODIFICATIONS:
+/// Used as generated - tested with Flutter emulator and hot reload.
 ///
 /// Author: Naphat Chanthakorn
 /// Date: 2025-12-22
