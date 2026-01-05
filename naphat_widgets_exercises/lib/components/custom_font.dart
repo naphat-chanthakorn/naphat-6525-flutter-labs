@@ -1,15 +1,19 @@
 /// Custom Font
 ///
+/// This widget is
 ///
 /// ============================================
 /// AI DOCUMENTATION
-/// No AI tools were used for this file.
-/// All code written independently.
-///
-/// I created the custom font component, so it can use for next time.
-/// In custom font write required the text parameter
-///
+/// Tool: ChatGPT (GPT-5.2)
+/// Prompt:
 /// ============================================
+///
+/// EXPLANATION (in my own words):
+///
+/// VERIFICATION:
+///
+/// MODIFICATIONS:
+/// Used as generated - tested with Flutter emulator and hot reload.
 ///
 /// Author: Naphat Chanthakorn
 /// Date: 2025-12-17

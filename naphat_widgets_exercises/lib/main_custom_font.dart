@@ -1,5 +1,6 @@
 /// Main Custom Font
 ///
+/// This widget is display
 ///
 /// ============================================
 /// AI DOCUMENTATION
@@ -8,7 +9,6 @@
 ///
 /// I used the text in container code from main quote container card and
 /// apply CustomFont class for the text.
-///
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn

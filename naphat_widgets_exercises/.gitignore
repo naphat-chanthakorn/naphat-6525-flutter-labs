@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# IDE / Run configs (IntelliJ / Android Studio)
+*.run.xml
+.idea/runConfigurations/
+
+# macOS junk (เผื่อยังไม่ได้ ignore)
+.DS_Store
+**/.DS_Store
