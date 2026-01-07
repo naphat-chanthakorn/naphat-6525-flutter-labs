@@ -6,8 +6,17 @@ void main() {
     MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
+        brightness: Brightness.light, // Light theme
       ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.amber,
+          brightness: Brightness.dark, // Dark theme
+        ),
+      ),
+      themeMode: ThemeMode.system,
       home: const MovieList(),
       debugShowCheckedModeBanner: false,
     ),
@@ -67,28 +76,28 @@ class _MovieListState extends State<MovieList> {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Movie List'),
-        backgroundColor: colorScheme.primary,
-        foregroundColor: Colors.white,
-      ),
+      appBar: AppBar(title: const Text('Movie List')),
       body: ListView(
         padding: const EdgeInsets.all(8.0),
         children: movies.map((movie) {
           final bool highRated = movie.rating >= 7.0;
 
           return ListTile(
-            leading: Icon(Icons.movie, color: colorScheme.primary),
+            leading: Icon(
+              Icons.movie,
+              color: Theme.of(context).colorScheme.primary,
+            ),
             title: Text(
               movie.title,
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: colorScheme.primary,
+                color: Theme.of(context).colorScheme.primary,
               ),
             ),
             subtitle: Text(
               '${movie.year} • ${movie.genre}\nDirector: ${movie.director}',
+              style: TextStyle(color: Theme.of(context).colorScheme.primary),
             ),
             trailing: SizedBox(
               width: 60,
