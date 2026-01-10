@@ -32,7 +32,12 @@ class _ContactListScreenState extends State<ContactListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('My Contact')),
+      appBar: AppBar(
+        title: const Text(
+          'My Contact',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
       body: ListView.separated(
         padding: const EdgeInsets.only(top: 16),
         itemBuilder: (context, index) {
