@@ -1,12 +1,21 @@
 /// Profile Card Rating
 ///
-/// This widget displays a
+/// This widget displays a profile card containing a contact image,
+/// contact information, and ratings.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// This file serves as the main entry point of the profile card app.
+/// A MaterialApp is created using Material Design 3 with a seeded color
+/// scheme, supporting both light and dark themes via ThemeMode.system.
+/// The Scaffold body contains a Container with EdgeInsets.all(20) padding
+/// and a deep red background color. Inside, a Column with
+/// mainAxisAlignment.spaceAround arranges the ContactImage,
+/// ContactInfo, and Ratings widgets according to personal design
+/// preference.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
@@ -42,7 +51,7 @@ void main() {
       home: Scaffold(
         body: Container(
           padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(color: Color.fromRGBO(153, 2, 2, 1.0)),
+          color: Color.fromRGBO(153, 2, 2, 1.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

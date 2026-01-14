@@ -1,12 +1,19 @@
 /// Contact Image
 ///
-/// This widget displays a
+/// This widget displays a profile image with a name label overlaid
+/// on the image.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// This StatelessWidget is named ContactImage and is used in the
+/// profile card. It takes two parameters: imagePath and name. The widget
+/// builds a Stack containing a Container decorated with a background image
+/// using DecorationImage and AssetImage. A Positioned widget is used to
+/// place the name label at the bottom of the image. The name text is
+/// styled in white.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
@@ -25,14 +32,29 @@ class ContactImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: const Alignment(0.6, 0.6),
       children: [
-        CircleAvatar(backgroundImage: AssetImage(imagePath), radius: 150),
         Container(
-          decoration: const BoxDecoration(color: Colors.black),
-          child: Text(
-            name,
-            style: TextStyle(color: Colors.white, fontSize: 20),
+          width: 300,
+          height: 300,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            image: DecorationImage(
+              image: AssetImage(imagePath),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 60,
+          left: 180,
+          child: Center(
+            child: Container(
+              decoration: BoxDecoration(color: Colors.black),
+              child: Text(
+                name,
+                style: const TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
           ),
         ),
       ],
