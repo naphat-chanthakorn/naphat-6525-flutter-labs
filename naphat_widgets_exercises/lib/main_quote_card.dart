@@ -5,8 +5,31 @@
 /// ============================================
 /// AI DOCUMENTATION
 /// Tool: ChatGPT (GPT-5.2)
-/// Prompt:
+/// Prompt: Create a Flutter screen that displays a quote image and
+/// the author's name.
 /// ============================================
+///
+/// EXPLANATION (in my own words):
+/// This is the QuoteCard widget, which serves as the main screen.
+/// I set firstName and lastName as constants. Material 3 is enabled
+/// to apply a ColorScheme using a seed color. A Scaffold is used to
+/// provide the basic app structure, including an AppBar.
+/// Padding is added to create space around the entire content.
+/// Inside the Column, Expanded widgets are used so the image and
+/// the name section share vertical space. The image is constrained
+/// to a maximum height of 500 pixels while maintaining its aspect ratio
+/// using Image.asset and BoxFit.contain. A Row is used to display
+/// the first name and last name horizontally, with SizedBox providing
+/// spacing between them. The text color is set to Deep Orange
+/// instead of black.
+///
+/// VERIFICATION:
+/// The screen was tested by running the app on an emulator, Pixel 8.
+/// Verified that all images load correctly from their URLs, and no overflow
+/// or alignment issues occur.
+///
+/// MODIFICATIONS:
+/// Used as generated - tested with Flutter emulator and hot reload.
 ///
 /// Author Naphat Chanthakorn
 /// Date 2025-12-10
@@ -14,10 +37,10 @@ library;
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const QuoteContainerCard());
+void main() => runApp(const QuoteCard());
 
-class QuoteContainerCard extends StatelessWidget {
-  const QuoteContainerCard({super.key});
+class QuoteCard extends StatelessWidget {
+  const QuoteCard({super.key});
 
   // This widget is the root of your application.
   @override
@@ -57,7 +80,8 @@ class QuoteContainerCard extends StatelessWidget {
                 ),
               ),
 
-              // Use Expanded widget to make the image and name take the full space vertically
+              // Use Expanded widget to make the image and name take
+              // the full space vertically
               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

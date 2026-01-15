@@ -1,14 +1,18 @@
 /// Main Custom Font
 ///
-/// This widget is display
+/// This widget is display a name using the CustomFont widget inside
+/// a container.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
-/// I used the text in container code from main quote container card and
-/// apply CustomFont class for the text.
+/// I reused the CustomFont widget to display text with a fontFamily,
+/// fontSize, and fontWeight. The Container uses margin to create
+/// space outside the box and padding to create space between the text
+/// and the border. BoxDecoration is applied to set the background color
+/// and rounded corners. The CustomFont widget is centered on the screen.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
@@ -44,7 +48,7 @@ class MyApp extends StatelessWidget {
                 CustomFont(
                   text: 'นภัทร จันทะกรณ์',
                   fontFamily: 'Kanit',
-                  fontSize: 24,
+                  fontSize: 28,
                   fontWeight: FontWeight.w500,
                 ),
               ],
