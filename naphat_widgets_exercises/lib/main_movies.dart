@@ -1,3 +1,40 @@
+/// Main Movies
+///
+/// This widget displays a list of movies using a ListView. Each ListTile
+/// shows the movie title, year, genre, director, and rating. When a movie
+/// is tapped, a SnackBar appears showing feedback based on the rating.
+///
+/// ============================================
+/// AI DOCUMENTATION
+/// No AI tools were used for this file.
+/// All code written independently.
+///
+/// The MovieList widget is implemented as a StatefulWidget with its state
+/// in _MovieListState, where a list of Movie objects is defined.
+/// It returns a Scaffold with an AppBar titled "Movie List".
+///
+/// The body contains a ListView that generates a ListTile for each movie.
+/// Each ListTile displays:
+/// - A movie icon using the primary color
+/// - The movie title in bold with the primary color
+/// - Year, genre, and director in the secondary color
+/// - A star icon and numeric rating at the trailing side
+/// If the rating is greater than or equal to 7.0, the star icon is colored
+/// with colorScheme.primary. Otherwise, it uses colorScheme.onSurfaceVariant.
+///
+/// When a ListTile is tapped, a SnackBar is shown with feedback:
+/// - Rating > 8.0 the massage shown "This is a highly rated movie!"
+/// - Rating between 6.0 and 8.0 massage shown "This is a good movie"
+/// - Rating < 6.0 massage shown "This movie might need improvement"
+///
+/// The app enables Material Design 3 and supports both Light and Dark themes.
+/// ============================================
+///
+/// Author: Naphat Chanthakorn
+/// Version: 1.0.0
+/// Date: 2026-01-07
+library;
+
 import 'package:flutter/material.dart';
 import '../models/movie_model.dart';
 
@@ -80,8 +117,6 @@ class _MovieListState extends State<MovieList> {
       body: ListView(
         padding: const EdgeInsets.all(8.0),
         children: movies.map((movie) {
-          final bool highRated = movie.rating >= 7.0;
-
           return ListTile(
             leading: Icon(
               Icons.movie,
@@ -97,7 +132,7 @@ class _MovieListState extends State<MovieList> {
             ),
             subtitle: Text(
               '${movie.year} • ${movie.genre}\nDirector: ${movie.director}',
-              style: TextStyle(color: Theme.of(context).colorScheme.primary),
+              style: TextStyle(color: Theme.of(context).colorScheme.secondary),
             ),
             trailing: SizedBox(
               width: 60,
@@ -105,7 +140,7 @@ class _MovieListState extends State<MovieList> {
                 children: [
                   Icon(
                     Icons.star,
-                    color: highRated
+                    color: movie.rating >= 7.0
                         ? colorScheme.primary
                         : colorScheme.onSurfaceVariant,
                   ),
