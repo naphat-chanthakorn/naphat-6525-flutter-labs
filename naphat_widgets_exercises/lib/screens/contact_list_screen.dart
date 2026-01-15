@@ -1,3 +1,41 @@
+/// Contact List Screen
+///
+/// This widget displays a list of contacts. Each ListTile shows
+/// the contact name and phone number. When the floating action button
+/// is pressed, a new contact is added to the list.
+///
+/// ============================================
+/// AI DOCUMENTATION
+/// No AI tools were used for this file.
+/// All code written independently.
+///
+/// The ContactListScreen is implemented as a StatelessWidget that maintains
+/// a list of Contact objects in its State. It returns a Scaffold with
+/// an AppBar titled "My Contacts".
+///
+/// The body uses ListView.separated to build the contact list:
+/// - itemBuilder:
+///   Creates each contact item. It returns a Container containing a ListTile
+///   that displays the contact name in bold with the primary color and
+///   the phone number in a secondary color.
+/// - separatorBuilder:
+///   Creates a custom divider between list items using a Container with
+///   BoxDecoration, providing spacing and visual separation between contacts.
+/// - itemCount:
+///   Determines the total number of list items based on the length of
+///   the contacts list.
+///
+/// When a floating action button is pressed, the _addContact method is called.
+/// the _addContact method adds a new contact to the list and increments
+/// the counter. The new contact is added at the end of the list. setState()
+/// is used to refresh the UI.
+/// ============================================
+///
+/// Author: Naphat Chanthakorn
+/// Version: 1.0.0
+/// Date: 2026-01-07
+library;
+
 import 'package:flutter/material.dart';
 import '../models/contact_model.dart';
 
