@@ -1,3 +1,24 @@
+/// Pet Gallery Screen
+///
+/// This widget displays a 2×2 grid pet gallery layout.
+///
+/// ============================================
+/// AI DOCUMENTATION
+/// No AI tools were used for this file.
+/// All code written independently.
+///
+/// The PetsGalleryScreen is implemented as a StatelessWidget.
+/// It returns a Scaffold with an AppBar titled "Pet Gallery".
+/// The body contains a Column with two Rows to create a 2×2 grid layout.
+/// Each Row uses mainAxisAlignment.spaceEvenly to evenly space
+/// the PetCardWithModel widgets. Every PetCardWithModel is wrapped
+/// with an Expanded widget and receives a PetModel instance.
+/// ============================================
+///
+/// Author: Naphat Chanthakorn
+/// Date: 2026-01-05
+library;
+
 import 'package:flutter/material.dart';
 import '../components/pet_card_with_model.dart';
 import '../models/pet_model.dart';
