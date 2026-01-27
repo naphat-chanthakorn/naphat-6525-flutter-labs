@@ -1,3 +1,19 @@
+/// Product Model
+///
+/// This widget is
+///
+/// ============================================
+/// AI DOCUMENTATION
+/// No AI tools were used for this file.
+/// All code written independently.
+///
+/// ============================================
+///
+/// Author: Naphat Chanthakorn
+/// Version: 1.0.0
+/// Date: 2026-01-27
+library;
+
 class ProductModel {
   final int id;
   final String name;

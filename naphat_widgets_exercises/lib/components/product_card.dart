@@ -1,3 +1,19 @@
+/// Product Card
+///
+/// This widget is
+///
+/// ============================================
+/// AI DOCUMENTATION
+/// No AI tools were used for this file.
+/// All code written independently.
+///
+/// ============================================
+///
+/// Author: Naphat Chanthakorn
+/// Version: 1.0.0
+/// Date: 2026-01-27
+library;
+
 import 'package:flutter/material.dart';
 import '../models/product_model.dart';
 import 'star_rating.dart';
@@ -13,6 +29,9 @@ class ProductCard extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Card(
+        clipBehavior: Clip.antiAlias,
+        elevation: 4,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -26,7 +45,7 @@ class ProductCard extends StatelessWidget {
                     product.name,
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: 5),
                   Text(
                     '฿${product.price.toStringAsFixed(2)}',
                     style: const TextStyle(
@@ -34,7 +53,7 @@ class ProductCard extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: 5),
                   StarRating(rating: product.rating),
                 ],
               ),
