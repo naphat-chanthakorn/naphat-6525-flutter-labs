@@ -54,7 +54,7 @@ class FacultyDetail extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 50),
-          Expanded(child: Image.asset(facultyModel.imgURL)),
+          Expanded(child: Image.asset(facultyModel.imageURL)),
         ],
       ),
     );

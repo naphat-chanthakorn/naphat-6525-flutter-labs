@@ -41,7 +41,7 @@ class _FacultyListState extends State<FacultyList> {
     'https://md.kku.ac.th',
     'https://apds.kku.ac.th',
   ];
-  static List facultyImgURLs = [
+  static List facultyImageURLs = [
     'assets/images/engineering.jpg',
     'assets/images/medicine.jpg',
     'assets/images/architecture.jpg',
@@ -52,7 +52,7 @@ class _FacultyListState extends State<FacultyList> {
     (index) => FacultyModel(
       facultyNames[index],
       facultyThaiNames[index],
-      '${facultyImgURLs[index]}',
+      '${facultyImageURLs[index]}',
       facultyDescriptions[index],
     ),
   );

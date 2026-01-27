@@ -15,7 +15,7 @@
 library;
 
 class FacultyModel {
-  final String name, thaiName, imgURL, description;
+  final String name, thaiName, imageURL, description;
 
-  const FacultyModel(this.name, this.thaiName, this.imgURL, this.description);
+  const FacultyModel(this.name, this.thaiName, this.imageURL, this.description);
 }
