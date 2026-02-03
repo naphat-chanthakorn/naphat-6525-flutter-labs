@@ -1,12 +1,16 @@
 /// Article Model
 ///
-/// This widget displays
+/// This class represents a article data model used in
+/// the NewsFeedScreen widget.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// The Article class defines a article object containing the title,
+/// description, date, and reading time. It uses a const constructor
+/// with required parameters to create immutable article instances.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn

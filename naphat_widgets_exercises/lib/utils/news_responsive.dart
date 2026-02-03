@@ -1,12 +1,20 @@
 /// News Responsive
 ///
-/// This widget displays
+/// This widget provides responsive utilities used by the news feed screen.
+/// supporting mobile, tablet, and desktop layouts.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// The Responsive class defines a responsive news feed that adapts to
+/// different screen sizes in mobile, tablet, and desktop devices.
+/// This class is define static breakpoint constants for tablet (600) and
+/// desktop (900). The isMobile, isTablet, and isDesktop methods are used
+/// to determine the current screen size based on the width while
+/// getColumnCount method is used to calculate the number of columns for
+/// the grid.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn

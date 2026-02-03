@@ -1,12 +1,18 @@
 /// Main News Feed Responsive
 ///
-/// This widget displays
+/// This widget serves as the entry point of the News Feed application.
+/// It displays a responsive news feed that adapts to different screen
+/// sizes and orientations in mobile, tablet, and desktop.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// This widget is used to run the application. The app supports both
+/// light and dark themes using Material Design 3. A SafeArea is applied to
+/// avoid notches and camera cutouts. The NewsFeedScreen widget is responsible
+/// for rendering the responsive article layouts.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn

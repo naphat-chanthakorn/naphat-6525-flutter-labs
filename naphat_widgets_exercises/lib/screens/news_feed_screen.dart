@@ -1,12 +1,20 @@
 /// News Feed Screen
 ///
-/// This widget displays
+/// This widget displays the news feed screen and supports responsive layouts
+/// for mobile, tablet, and desktop.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// This widget displays the news feed screen. It supports mobile, tablet,
+/// and desktop layouts. It uses a ListView for mobile layouts through
+/// the _buildListView method, and a GridView for tablet and desktop layouts
+/// through the _buildGridView method. I used the LayoutBuilder to consider
+/// which layout for the current screen. The _buildArticleCard method is
+/// used to build the article card for displays the information about
+/// each article.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
