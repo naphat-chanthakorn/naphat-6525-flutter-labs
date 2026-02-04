@@ -1,12 +1,16 @@
 /// Main Profile Button
 ///
-/// This widget displays
+/// This widget serves as the entry point of the Profile Button application.
+/// It displays a profile with a submit button that showing the dialog.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// This widget is used to run the application. The app supports both
+/// light and dark themes using Material Design 3. The ProfileWithButton widget
+/// is responsible for displays the profile layouts.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn

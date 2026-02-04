@@ -1,12 +1,19 @@
 /// Profile With Button
 ///
-/// This widget displays
+/// This widget displays a profile along with information and a button.
+/// When the button is pressed, a confirmation dialog is displayed.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// The ProfileWithButton widget is responsible for display the profile layout,
+/// including header information such as name on left and phone number on right
+/// using spaceBetween alignment. The profile image is displayed in the center
+/// using Image.asset and Expanded for fill the available space.
+/// The footer contained centered photo credit text and the a submit button
+/// The button is used to show the dialog for confirmation.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
