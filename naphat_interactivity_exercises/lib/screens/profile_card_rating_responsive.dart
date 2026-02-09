@@ -14,9 +14,9 @@ library;
 
 import 'package:flutter/material.dart';
 import '../components/interactive_ratings.dart';
-import '../components/contact_image.dart';
-import '../components/contact_info.dart';
-import '../utils/responsive.dart';
+import 'package:naphat_widgets_exercises/components/contact_image.dart';
+import 'package:naphat_widgets_exercises/components/contact_info.dart';
+import 'package:naphat_widgets_exercises/utils/responsive.dart';
 
 class ProfileCardRatingResponsive extends StatelessWidget {
   const ProfileCardRatingResponsive({super.key});
