@@ -1,10 +1,17 @@
 /// Main Interactivity Profile
 ///
+/// This widget serves as the entry point of the Interactivity Profile.
+/// It displays a profile card with the interactive star ratings.
+///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// This widget is used to run the application. The app supports both
+/// light and dark themes using Material Design 3. A SafeArea is applied to
+/// avoid notches and camera cutouts. The ProfileCardRatingResponsive widget
+/// is responsible for display the profile card with interactive star ratings.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
