@@ -1,10 +1,23 @@
 /// Interactive Rating
 ///
+/// The ProfileCardRatingResponsive widget is responsible for displaying
+/// an interactive profile card layout that adapts to different screen
+/// orientations. Compared to the previous profile card implementation,
+/// this version integrates the InteractiveRatings widget to allow users
+/// to adjust the rating.
+///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// The ProfileCardRatingResponsive widget reuses the ContactImage,
+/// ContactInfo, and Responsive utilities from the widgets_exercises
+/// package. It adapts the layout based on the current device orientation
+/// by using Responsive.isPortrait(context) to build separate layouts for
+/// portrait and landscape modes. Semantic colors from the theme are passed
+/// to the InteractiveRatings widget, using colorScheme.primary for
+/// activeColor and colorScheme.outlineVariant for inactiveColor.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn

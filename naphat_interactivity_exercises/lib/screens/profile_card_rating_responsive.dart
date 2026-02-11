@@ -1,10 +1,20 @@
 /// Profile Card Rating Responsive
 ///
+/// The ProfileCardRatingResponsive is used for the interactivity profile
+/// layout. It's responded for the layout. The difference from last
+/// profile card is used InteractiveRatings widget for adjust the rating.
+///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// The ProfileCardRatingResponsive is reused from ContactImage, ContactInfo,
+/// and Responsive utilities. It's responded for the layout on current
+/// orientation. Use MediaQuery.of(context).orientation in Responsive to
+/// detect orientation and build separate layouts for portrait and landscape.
+/// Pass semantic colors from the theme to InteractiveRatings. Use primary for
+/// activeColor and outlineVariant for inactiveColor.
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
