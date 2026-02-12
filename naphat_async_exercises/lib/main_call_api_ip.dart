@@ -1,12 +1,21 @@
 /// Main Call API IP
 ///
-/// This widget displays
+/// The fetchPublicIP function retrieves the public IP address from a API
+/// and returns it as a String. The formatted output is displayed in the main
+/// function.
 ///
 /// ============================================
 /// AI DOCUMENTATION
 /// No AI tools were used for this file.
 /// All code written independently.
 ///
+/// The fetchPublicIP function is asynchronous and uses the async/await
+/// to perform an HTTP GET request. The await pauses execution until
+/// the API response is received. The JSON response is decoded using the
+/// dart:convert library, converting the JSON string into a Dart Map,
+/// from which the IP address is extracted. Errors are handled using try-catch
+/// and exceptions. The function returns a Future<String>, allowing the caller
+/// to handle the result or error using then() and catchError().
 /// ============================================
 ///
 /// Author: Naphat Chanthakorn
